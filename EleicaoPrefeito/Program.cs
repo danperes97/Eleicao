@@ -15,9 +15,14 @@ namespace EleicaoPrefeito
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Carregamento());
+            DbConnection con = new DbConnection('connection')
+            con.OpenConnection();
+
+            using (SqlCommand command = new SqlCommand("Create Database Election", con.sqlConnection))
+            // using (SqlDataReader reader = command.ExecuteReader())
+            // Application.EnableVisualStyles();
+            // Application.SetCompatibleTextRenderingDefault(false);
+            // Application.Run(new Carregamento());
         }
     }
 }

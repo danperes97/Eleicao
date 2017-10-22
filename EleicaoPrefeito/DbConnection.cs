@@ -27,5 +27,14 @@ namespace EleicaoPrefeito
             MessageBox.Show("Cannot open a connection!");
           }
         }
+
+        public void CloseConnection(){
+          try{
+            this.sqlConnection.Close();
+          }
+          catch(Exception ex){
+            MessageBox.Show("Cannot close a connection!");
+          }
+        }
       }
 }
