@@ -13,10 +13,10 @@ namespace EleicaoPrefeito
         private int number;
         private int votes;
 
-        public string Name { get => name; set => name = value; }
-        public int Number { get => number; set => number = value; }
-        public int Votes { get => votes; }
-        public Party Party { get => party; set => party = value; }
+        public string Name { get; set; }
+        public Int32 Number { get; set; }
+        public Int32 Votes { get; set; }
+        public Party Party { get; set; }
 
         public Candidate(string name, int number, Party party)
         {

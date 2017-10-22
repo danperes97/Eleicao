@@ -11,13 +11,13 @@ namespace EleicaoPrefeito
         private string name;
         private string initials;
 
+        public string Name { get; set; }
+        public string Initials { get; set; }
+
         public Party(string name, string initials)
         {
             this.Name = name;
             this.Initials = initials;
         }
-
-        public string Name { get => name; set => name = value; }
-        public string Initials { get => initials; set => initials = value; }
     }
 }
