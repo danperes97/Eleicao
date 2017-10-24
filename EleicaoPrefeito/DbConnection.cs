@@ -53,9 +53,8 @@ namespace EleicaoPrefeito
         {
             MySqlConnection con = new MySqlConnection(this.ConnetionString);
             con.Open();
-            MessageBox.Show(BaseAlreadyExists(con).ToString());
 
-            if (BaseAlreadyExists(con)) {
+            if (BaseExists(con) == false) {
                 CreateDbElection(con);
                 UseDbElection(con);
 
@@ -126,21 +125,17 @@ namespace EleicaoPrefeito
             }
         }
 
-        public bool BaseAlreadyExists(MySqlConnection mySqlConnection)
+        public bool BaseExists(MySqlConnection mySqlConnection)
         {
-            bool exists;
-            try
-            {
-                exists = true;
-                var command = "select 1 from candidates where 1 = 0";
-                MySqlCommand cmd = new MySqlCommand(command, mySqlConnection);
-                cmd.ExecuteNonQuery();
-            }
-            catch
-            {
-                exists = false;
-            }
-            return exists;
+            MySqlCommand cmd = new MySqlCommand(MySqlCommandSchemaExists(), mySqlConnection);
+            return cmd.ExecuteScalar().ToString() == "1";
+        }
+
+        public string MySqlCommandSchemaExists() {
+            return "SELECT COUNT(*) " +
+                   "SCHEMA_NAME FROM " +
+                   "INFORMATION_SCHEMA.SCHEMATA " +
+                   "WHERE SCHEMA_NAME='election'";
         }
 
     }
