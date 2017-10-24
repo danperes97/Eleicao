@@ -12,7 +12,6 @@ C:\Users\eder\Desktop\Certificados Fundação Bradesco\Curso C#\EleicaoPrefeito\
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\bin\Debug\EleicaoPrefeito.exe.config
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\bin\Debug\EleicaoPrefeito.exe
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\bin\Debug\EleicaoPrefeito.pdb
-C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.csprojResolveAssemblyReference.cache
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.Carregamento.resources
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.Form1.resources
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.Properties.Resources.resources
@@ -21,3 +20,5 @@ C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\Elei
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.csproj.CoreCompileInputs.cache
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.exe
 C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.pdb
+C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\obj\Debug\EleicaoPrefeito.csprojResolveAssemblyReference.cache
+C:\Users\eder\Desktop\C# Projects\EleicaoPrefeito\EleicaoPrefeito\bin\Debug\MySql.Data.dll
